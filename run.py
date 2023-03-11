@@ -54,9 +54,12 @@ def question_one():
     print("Please answer the following questions with a rating of 1-5")
     print("1 being strongly disagree(negative), 5 being strongly agree(positive).\n")
 
-    question = QUESTIONS.cell(2,2).value
-    q_one = input(f"{question}:\n")
-    validate_answer(q_one)
+    while True:
+        question = QUESTIONS.cell(2,2).value
+        q_one = input(f"{question}:\n")  
+        if validate_answer(q_one):
+            break
+    return q_one
 
 
 def validate_answer(values):
@@ -68,14 +71,14 @@ def validate_answer(values):
     try:
         if len(values) > 1:
             raise ValueError(
-                f"Exactly 6 values required, you provided {len(values)}"
+                f"Exactly 1 value required, you provided {len(values)}\n"
             )
         value = int(values)
         if value not in range(1, 6):
-            raise ValueError("Answer must be between 1 and 5")
+            raise ValueError("Answer must be between 1 and 5\n")
         return True
     except ValueError as e:
-        print(f"Invalid input: {e}")
+        print(f"Invalid input: {e}\n")
         return False
 
 
