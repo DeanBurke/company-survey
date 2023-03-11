@@ -131,16 +131,31 @@ def validate_answer(values):
         return False
 
 
+def update_worksheet(data, worksheet):
+    """
+    Update the relevant worksheet with the data provided
+    """
+    print(f"Updating {worksheet} worksheet...\n")
+    worksheet_to_update = SHEET.worksheet(worksheet)
+    worksheet_to_update.append_row(data)
+    print(f"{worksheet} worksheet updated successfully\n")
+
+
 def main():
     """
     Run all program functions
     """
-    # user_dept = get_employee_dept()
-    # ans_one = question_one()
-    # ans_two = question_two()
-    # ans_three = question_three()
-    # ans_four = question_four()
-    question_five()
+    user_dept = get_employee_dept()
+    ans_one = int(question_one())
+    ans_two = int(question_two())
+    ans_three = int(question_three())
+    ans_four = int(question_four())
+    ans_five = int(question_five())
+
+    user_submission = [
+        user_dept, ans_one, ans_two, ans_three, ans_four, ans_five
+        ]
+    update_worksheet(user_submission, "results")
 
 
 print("Welcome to our company survey.\n")
