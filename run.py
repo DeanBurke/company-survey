@@ -19,15 +19,16 @@ def get_employee_dept():
     works under
     """
     while True:
-        print("Welcome to our comppany survey.\n")
         print("Please state what department you currently work for?")
         print("(Digital, Finance, HR, Legal, Production)\n")
 
         dept = input("Enter your department here: \n")
-        
+
         if validate_dept(dept):
             print("Data is valid")
             break
+
+    return dept
 
 
 def validate_dept(dept):
@@ -45,4 +46,12 @@ def validate_dept(dept):
         return False
 
 
-get_employee_dept()
+def main():
+    """
+    Run all program functions
+    """
+    user_dept = get_employee_dept()
+
+
+print("Welcome to our company survey.\n")
+main()
