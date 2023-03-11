@@ -75,12 +75,36 @@ def question_two():
     return q_two
 
 
+def question_three():
+    """
+    Gets the employee's rating to question three from the spreadsheet
+    """
+    while True:
+        question = QUESTIONS.cell(4,2).value
+        q_three = input(f"{question}:\n")  
+        if validate_answer(q_three):
+            break
+    return q_three
+
+
+def question_four():
+    """
+    Gets the employee's rating to question four from the spreadsheet
+    """
+    while True:
+        question = QUESTIONS.cell(5,2).value
+        q_four = input(f"{question}:\n")  
+        if validate_answer(q_four):
+            break
+    return q_four
+
+
 def validate_answer(values):
     """
     Checks to make sure answer is between 1 and 5
     Raises ValueError if answer cannot be converted into int,
     or if there isnt't exactly 1 value.
-    """ 
+    """
     try:
         if len(values) > 1:
             raise ValueError(
@@ -101,7 +125,9 @@ def main():
     """
     # user_dept = get_employee_dept()
     # ans_one = question_one()
-    question_two()
+    # ans_two = question_two()
+    # ans_three = question_three()
+    question_four()
 
 
 print("Welcome to our company survey.\n")
