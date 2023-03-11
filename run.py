@@ -145,7 +145,7 @@ def print_updated_average():
     """
     Get the updated average and post it to the terminal
     """
-    print("\nGetting updated results from worksheet...\n")
+    print("\nGetting updated average results from worksheet...\n")
     print("\nResults will be printed in the format of")
     print("DEPT, Q1, Q2, Q3, Q4, Q5\n")
 
@@ -160,6 +160,17 @@ def print_updated_average():
     print(legal)
     production = SHEET.worksheet('average').row_values(6)
     print(production)
+
+
+def goodbye_message():
+    """
+    Exiting message for employee's on completing
+    the company survey
+    """
+    print("\nThank you for completing our survey today\n")
+    print("Final results from the survey will be posted on the company's")
+    print("currents page, when the submission deadline date has passed.\n")
+    print("Have a great day!\n")
 
 
 def main():
@@ -182,4 +193,4 @@ def main():
 
 print("Welcome to our company survey.\n")
 # main()
-print_updated_average()
+goodbye_message()
