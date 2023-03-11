@@ -52,7 +52,8 @@ def question_one():
     Gets the employee's rating to question one from the spreadsheet
     """
     print("Please answer the following questions with a rating of 1-5")
-    print("1 being strongly disagree(negative), 5 being strongly agree(positive).\n")
+    print("1 being strongly disagree(negative)")
+    print("5 being strongly agree(positive).\n")
 
     while True:
         question = QUESTIONS.cell(2,2).value
@@ -60,6 +61,18 @@ def question_one():
         if validate_answer(q_one):
             break
     return q_one
+
+
+def question_two():
+    """
+    Gets the employee's rating to question two from the spreadsheet
+    """
+    while True:
+        question = QUESTIONS.cell(3,2).value
+        q_two = input(f"{question}:\n")  
+        if validate_answer(q_two):
+            break
+    return q_two
 
 
 def validate_answer(values):
@@ -71,11 +84,11 @@ def validate_answer(values):
     try:
         if len(values) > 1:
             raise ValueError(
-                f"Exactly 1 value required, you provided {len(values)}\n"
+                f"Exactly 1 value required, you provided {len(values)}"
             )
         value = int(values)
         if value not in range(1, 6):
-            raise ValueError("Answer must be between 1 and 5\n")
+            raise ValueError("Answer must be between 1 and 5")
         return True
     except ValueError as e:
         print(f"Invalid input: {e}\n")
@@ -87,7 +100,8 @@ def main():
     Run all program functions
     """
     # user_dept = get_employee_dept()
-    question_one()
+    # ans_one = question_one()
+    question_two()
 
 
 print("Welcome to our company survey.\n")
