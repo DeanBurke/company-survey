@@ -189,8 +189,8 @@ def main():
         ]
     update_worksheet(user_submission, "results")
     print_updated_average()
+    goodbye_message()
 
 
 print("Welcome to our company survey.\n")
-# main()
-goodbye_message()
+main()
