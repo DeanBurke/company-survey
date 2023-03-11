@@ -69,7 +69,7 @@ def question_two():
     """
     while True:
         question = QUESTIONS.cell(3, 2).value
-        q_two = input(f"{question}:\n")
+        q_two = input(f"\n{question}:\n")
         if validate_answer(q_two):
             break
     return q_two
@@ -81,7 +81,7 @@ def question_three():
     """
     while True:
         question = QUESTIONS.cell(4, 2).value
-        q_three = input(f"{question}:\n")
+        q_three = input(f"\n{question}:\n")
         if validate_answer(q_three):
             break
     return q_three
@@ -93,7 +93,7 @@ def question_four():
     """
     while True:
         question = QUESTIONS.cell(5, 2).value
-        q_four = input(f"{question}:\n")
+        q_four = input(f"\n{question}:\n")
         if validate_answer(q_four):
             break
     return q_four
@@ -105,7 +105,7 @@ def question_five():
     """
     while True:
         question = QUESTIONS.cell(6, 2).value
-        q_five = input(f"{question}:\n")
+        q_five = input(f"\n{question}:\n")
         if validate_answer(q_five):
             break
     return q_five
@@ -167,10 +167,12 @@ def goodbye_message():
     Exiting message for employee's on completing
     the company survey
     """
+    print("-" * 45)
     print("\nThank you for completing our survey today\n")
     print("Final results from the survey will be posted on the company's")
     print("currents page, when the submission deadline date has passed.\n")
     print("Have a great day!\n")
+    print("-" * 45)
 
 
 def main():
@@ -192,5 +194,7 @@ def main():
     goodbye_message()
 
 
-print("Welcome to our company survey.\n")
+print("-" * 45)
+print("Welcome to our company survey.")
+print("-" * 45)
 main()
