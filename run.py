@@ -56,8 +56,8 @@ def question_one():
     print("5 being strongly agree(positive).\n")
 
     while True:
-        question = QUESTIONS.cell(2,2).value
-        q_one = input(f"{question}:\n")  
+        question = QUESTIONS.cell(2, 2).value
+        q_one = input(f"{question}:\n")
         if validate_answer(q_one):
             break
     return q_one
@@ -68,8 +68,8 @@ def question_two():
     Gets the employee's rating to question two from the spreadsheet
     """
     while True:
-        question = QUESTIONS.cell(3,2).value
-        q_two = input(f"{question}:\n")  
+        question = QUESTIONS.cell(3, 2).value
+        q_two = input(f"{question}:\n")
         if validate_answer(q_two):
             break
     return q_two
@@ -80,8 +80,8 @@ def question_three():
     Gets the employee's rating to question three from the spreadsheet
     """
     while True:
-        question = QUESTIONS.cell(4,2).value
-        q_three = input(f"{question}:\n")  
+        question = QUESTIONS.cell(4, 2).value
+        q_three = input(f"{question}:\n")
         if validate_answer(q_three):
             break
     return q_three
@@ -92,11 +92,23 @@ def question_four():
     Gets the employee's rating to question four from the spreadsheet
     """
     while True:
-        question = QUESTIONS.cell(5,2).value
-        q_four = input(f"{question}:\n")  
+        question = QUESTIONS.cell(5, 2).value
+        q_four = input(f"{question}:\n")
         if validate_answer(q_four):
             break
     return q_four
+
+
+def question_five():
+    """
+    Gets the employee's rating to question five from the spreadsheet
+    """
+    while True:
+        question = QUESTIONS.cell(6, 2).value
+        q_five = input(f"{question}:\n")
+        if validate_answer(q_five):
+            break
+    return q_five
 
 
 def validate_answer(values):
@@ -127,7 +139,8 @@ def main():
     # ans_one = question_one()
     # ans_two = question_two()
     # ans_three = question_three()
-    question_four()
+    # ans_four = question_four()
+    question_five()
 
 
 print("Welcome to our company survey.\n")
