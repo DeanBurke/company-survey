@@ -135,10 +135,31 @@ def update_worksheet(data, worksheet):
     """
     Update the relevant worksheet with the data provided
     """
-    print(f"Updating {worksheet} worksheet...\n")
+    print(f"\nUpdating {worksheet} worksheet...\n")
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} worksheet updated successfully\n")
+
+
+def print_updated_average():
+    """
+    Get the updated average and post it to the terminal
+    """
+    print("\nGetting updated results from worksheet...\n")
+    print("\nResults will be printed in the format of")
+    print("DEPT, Q1, Q2, Q3, Q4, Q5\n")
+
+    # Get each individual row from the average tab on google sheet
+    digital = SHEET.worksheet('average').row_values(2)
+    print(digital)
+    finance = SHEET.worksheet('average').row_values(3)
+    print(finance)
+    hr = SHEET.worksheet('average').row_values(4)
+    print(hr)
+    legal = SHEET.worksheet('average').row_values(5)
+    print(legal)
+    production = SHEET.worksheet('average').row_values(6)
+    print(production)
 
 
 def main():
@@ -156,7 +177,9 @@ def main():
         user_dept, ans_one, ans_two, ans_three, ans_four, ans_five
         ]
     update_worksheet(user_submission, "results")
+    print_updated_average()
 
 
 print("Welcome to our company survey.\n")
-main()
+# main()
+print_updated_average()
