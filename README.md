@@ -26,3 +26,13 @@ This updated average is sent back to the terminal, to give employees an up to da
 
 # Features
 
+* The program will only allow the employee to select from a select number of departments.
+    * An error message is returned if the employee tries to input incorrect department, or misspells one the departments that is an option.
+    * It won't matter if the employee uses any capital letters, the program will accept the entry once it is spelt correctly.
+    * It will loop until a correct option is enterend.
+* The program then asks the five questions, it will only accept an answer between 1 and 5.
+    * It will raise a ValueError and display a message to the terminal if the employee tries to enter a number higher, more than one digit/character or is a letter.
+    *  It will loop until a correct option is enterend.
+* The program then creates a user submission string (converting the answers into integers) and pushes it to the Google Sheet.
+* The program then pulls the updated information from the 'average' tab on the Google Sheet and calls it to the terminal. 
+* Goodbye message then runs and program ends. 
