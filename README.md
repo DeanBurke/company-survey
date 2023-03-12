@@ -14,7 +14,7 @@ Thank you in advance for taking the time to complete this survey. Your feedback 
 
 # Program intended use
 
-![Screeshot of the site on flowchat](./assets/images/flowchart.jpg)
+![Screeshot of the site flowchat](./assets/images/flowchart.jpg)
 
 The Python program developed is designed to gather valuable feedback from employees.
 
@@ -62,14 +62,41 @@ This updated average is sent back to the terminal, to give employees an up to da
 
 When creating the "validate_dept" function, it was constantly giving an error message, I incorrectly had (values) in the parameter, which I then correcte to (dept).
 
-![Screeshot of the site on bug 1](./assets/images/bug1.jpg)
+![Screeshot of bug 1](./assets/images/bug1.jpg)
 
 
 Another bug that arose was when the user submission was pushed to the Google Sheet, the answers were incorrectly not being inputted as integers, I used int() when declaring the variable to resolve this.
 
-![Screeshot of the site on bug 2](./assets/images/bug2.jpg)
+![Screeshot of bug 2](./assets/images/bug2.jpg)
 
 ## Unfixed Bugs
 
 No unfixed bugs.
 
+<br>
+
+# Validating Testing
+
+The code was ran through PEP8 as mentioned above with no errors showing. 
+
+<br>
+
+# Deployment
+
+This project was deployed to Heroku. Steps below.
+
+* Make sure your requirement.txt file is updated by entering "pip3 freeze > requirements.txt" into the terminal.
+
+    ![Screeshot of requirements](./assets/images/heroku-requirements.jpg)
+
+* Create a new Heroku app.
+
+    ![Screeshot of create app on Heroku](./assets/images/heroku-create-app.jpg)
+
+* Create the config vars (creds file) and the needed buildpacks (Python and NodeJS).
+
+    ![Screeshot of config vars and buildpacks](./assets/images/heroku-config-buildpacks.jpg)
+
+* Link Github to Heroku for deployment and click on Deploy Branch once the respository is selected. 
+
+    ![Screeshot of deployment section](./assets/images/heroku-deployment.jpg)
