@@ -68,9 +68,13 @@ Another bug that arose was when the user submission was pushed to the Google She
 
 No unfixed bugs.
 
+<br>
+
 # Validating Testing
 
 The code was ran through PEP8 as mentioned above with no errors showing. 
+
+<br>
 
 # Deployment
 
