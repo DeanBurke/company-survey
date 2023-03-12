@@ -22,8 +22,6 @@ The program begins by asking employees to input their department, and then asks 
 
 This updated average is sent back to the terminal, to give employees an up to date rating per department before the deadline is finished and the results will be announced. 
 
----
-
 # Features
 
 * The program will only allow the employee to select from a select number of departments.
@@ -45,7 +43,6 @@ This updated average is sent back to the terminal, to give employees an up to da
 * Possibly change how the average tab is collating the updated result average per department (use Python code)
     * Currently it updates due to a Google Sheet (Excel) formula.
 
-<br>
 
 # Testing
 
@@ -53,8 +50,6 @@ This updated average is sent back to the terminal, to give employees an up to da
 * Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, no errors found as per image below
 
 ![Screeshot of the site on PEP8](./assets/images/pep8.jpg)
-
-<br>
 
 # Bugs
 
@@ -73,13 +68,9 @@ Another bug that arose was when the user submission was pushed to the Google She
 
 No unfixed bugs.
 
-<br>
-
 # Validating Testing
 
 The code was ran through PEP8 as mentioned above with no errors showing. 
-
-<br>
 
 # Deployment
 
