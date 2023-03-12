@@ -36,3 +36,11 @@ This updated average is sent back to the terminal, to give employees an up to da
 * The program then creates a user submission string (converting the answers into integers) and pushes it to the Google Sheet.
 * The program then pulls the updated information from the 'average' tab on the Google Sheet and calls it to the terminal. 
 * Goodbye message then runs and program ends. 
+
+## Future Features
+
+* Add an additional question where the employee can give additional feedback and it will be collated into separate tabs per department. 
+* Give the employee a chance to review their answers before submitting, allowing them to restart their questionnaire to change an answer if needed. 
+* Add a name entry question, which won't be attached to their answers (to keep their anonymity), but will be added to a separate tab to track if all employees have submitted a response.
+* Possibly change how the average tab is collating the updated result average per department (use Python code)
+    * Currently it updates due to a Google Sheet (Excel) formula.
