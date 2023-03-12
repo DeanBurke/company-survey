@@ -56,4 +56,20 @@ This updated average is sent back to the terminal, to give employees an up to da
 
 <br>
 
+# Bugs
+
+## Solved Bugs
+
+When creating the "validate_dept" function, it was constantly giving an error message, I incorrectly had (values) in the parameter, which I then correcte to (dept).
+
+![Screeshot of the site on bug 1](./assets/images/bug1.jpg)
+
+
+Another bug that arose was when the user submission was pushed to the Google Sheet, the answers were incorrectly not being inputted as integers, I used int() when declaring the variable to resolve this.
+
+![Screeshot of the site on bug 2](./assets/images/bug2.jpg)
+
+## Unfixed Bugs
+
+No unfixed bugs.
 
