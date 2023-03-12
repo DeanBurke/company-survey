@@ -100,3 +100,9 @@ This project was deployed to Heroku. Steps below.
 * Link Github to Heroku for deployment and click on Deploy Branch once the respository is selected. 
 
     ![Screeshot of deployment section](./assets/images/heroku-deployment.jpg)
+
+# Credits
+
+* Code from the Love Sandwiches project was helpful throughout this project and on deployment.
+* I used to the following [topic/article](https://stackoverflow.com/questions/31625792/python-how-to-accept-only-certain-words-with-user-input) from Stack Overflow to help with only allowing a particular word being entered for my department selection code.
+* When creating the function to pull the updated averages to the terminal, I used this [article](https://docs.gspread.org/en/latest/user-guide.html) from [gspread](https://docs.gspread.org/en/latest/index.html)
