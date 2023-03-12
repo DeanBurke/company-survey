@@ -44,3 +44,16 @@ This updated average is sent back to the terminal, to give employees an up to da
 * Add a name entry question, which won't be attached to their answers (to keep their anonymity), but will be added to a separate tab to track if all employees have submitted a response.
 * Possibly change how the average tab is collating the updated result average per department (use Python code)
     * Currently it updates due to a Google Sheet (Excel) formula.
+
+<br>
+
+# Testing
+
+* I have manually tested all code throughout, to clear any error messages as they were occurring (mainly whitespaces / indentation).
+* Passed my code through the [PEP8 checker](https://pep8ci.herokuapp.com/) created by Code Institute, no errors found as per image below
+
+![Screeshot of the site on PEP8](./assets/images/pep8.jpg)
+
+<br>
+
+
